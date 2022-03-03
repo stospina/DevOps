@@ -37,7 +37,7 @@ docker run -d --name sonardb \
 postgres:12.1-alpine
 
 # Docker Sonarqube
-docker run -d --name sonarqube \
+docker run -d --name atsonarqube \
 --network atnet -p 9000:9000 \
 -e SONARQUBE_JDBC_URL=jdbc:postgresql://sonardb/sonar \
 -e SONAR_JDBC_USERNAME=sonar \
